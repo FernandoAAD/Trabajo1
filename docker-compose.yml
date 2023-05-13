@@ -1,0 +1,25 @@
+version: '3.6'
+services:
+  app_service1:
+    restart: always
+    image: falarcondocker/service1
+    container_name: 'microservicio1'
+    ports:
+      - "8085:5005"
+
+  # --------------------------------------------- #  
+  app_service2:
+    restart: always
+    image: falarcondocker/service2
+    container_name: 'microservicio2'
+    ports:
+      - "8086:5005"
+      
+  # --------------------------------------------- #  
+  app_service3:
+    restart: always
+    image: falarcondocker/service3
+    container_name: 'microservicio3'
+    ports:
+      - "8087:5005"
+
